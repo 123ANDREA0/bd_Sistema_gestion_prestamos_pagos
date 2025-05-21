@@ -56,3 +56,5 @@ Seguimiento: Banco revisa estado y morosidad, envía recordatorios o acciones de
 
 Cierre: Una vez todas las cuotas están pagadas, se cierra el préstamo.
 
+*Diagrama Entidad-Relación
+![image](https://github.com/user-attachments/assets/0b0726fe-ac09-4aee-b080-0782005b2e04)
