@@ -62,7 +62,7 @@ Cierre: Una vez todas las cuotas están pagadas, se cierra el préstamo.
 *Módelo Lógico
 [image](https://github.com/user-attachments/assets/88aded49-4b35-465b-a1b8-146e0629632c)
 
-*odelo físico
+*Modelo físico
 
 ![image](https://github.com/user-attachments/assets/a32b1e46-26b4-4332-94e6-090f18823fc9)
 
