@@ -88,7 +88,7 @@ CREATE TABLE pagos (
     FOREIGN KEY (cuota_id) REFERENCES cuotas(id)
 );
 
--- TABLA DETALLE PAGOS (opcional, útil para pagos distribuidos)
+-- TABLA DETALLE PAGOS (opcional, Ãºtil para pagos distribuidos)
 CREATE TABLE detalle_pagos (
     id INT IDENTITY(1,1) PRIMARY KEY,
     cuota_id INT NOT NULL,
@@ -107,21 +107,21 @@ SELECT*FROM sucursales;
 
 INSERT INTO sucursales (codigo, nombre, ciudad, region, direccion, estado, telefono) 
 VALUES 
-('SUC001', 'Sucursal Salamanca', 'Baleares', 'Sevilla', 'Vial Paca Marí 1 Puerta 2 Valencia, 23464', 'activo', '+34 743565422'),
-('SUC002', 'Sucursal Palencia', 'Salamanca', 'Córdoba', 'Paseo Rodrigo Acuña 79 Puerta 6 Lleida, 98592', 'activo', '+34 673 158 138'),
+('SUC001', 'Sucursal Salamanca', 'Baleares', 'Sevilla', 'Vial Paca MarÃ­ 1 Puerta 2 Valencia, 23464', 'activo', '+34 743565422'),
+('SUC002', 'Sucursal Palencia', 'Salamanca', 'CÃ³rdoba', 'Paseo Rodrigo AcuÃ±a 79 Puerta 6 Lleida, 98592', 'activo', '+34 673 158 138'),
 ('SUC003', 'Sucursal Madrid', 'Tarragona', 'Alicante', 'C. de Victor Jover 84 Sevilla, 45062', 'activo', '+34 705 033 493'),
-('SUC004', 'Sucursal Ourense', 'Lugo', 'Málaga', 'Vial Sonia Pozuelo 52 Ourense, 88752', 'activo', '+34864 37 41 28'),
-('SUC005', 'Sucursal Salamanca', 'Baleares', 'Granada', 'Vial de Amparo Naranjo 55 Jaén, 99156', 'activo', '+34720 624 745'),
-('SUC006', 'Sucursal Cantabria', 'Huelva', 'Baleares', 'Pasadizo de María Del Carmen Pozuelo 2 Piso 4 Ciudad, 49172', 'activo', '+34735 11 80 60'),
-('SUC007', 'Sucursal Badajoz', 'Murcia', 'Murcia', 'Cuesta de Onofre Gomez 6 Ávila, 45411', 'activo', '+34 716 48 82 14'),
-('SUC008', 'Sucursal Ourense', 'Murcia', 'Lugo', 'Urbanización Socorro Sánchez 81 Puerta 5 Las Palmas, 28632', 'activo', '+34623 26 31 77'),
+('SUC004', 'Sucursal Ourense', 'Lugo', 'MÃ¡laga', 'Vial Sonia Pozuelo 52 Ourense, 88752', 'activo', '+34864 37 41 28'),
+('SUC005', 'Sucursal Salamanca', 'Baleares', 'Granada', 'Vial de Amparo Naranjo 55 JaÃ©n, 99156', 'activo', '+34720 624 745'),
+('SUC006', 'Sucursal Cantabria', 'Huelva', 'Baleares', 'Pasadizo de MarÃ­a Del Carmen Pozuelo 2 Piso 4 Ciudad, 49172', 'activo', '+34735 11 80 60'),
+('SUC007', 'Sucursal Badajoz', 'Murcia', 'Murcia', 'Cuesta de Onofre Gomez 6 Ãvila, 45411', 'activo', '+34 716 48 82 14'),
+('SUC008', 'Sucursal Ourense', 'Murcia', 'Lugo', 'UrbanizaciÃ³n Socorro SÃ¡nchez 81 Puerta 5 Las Palmas, 28632', 'activo', '+34623 26 31 77'),
 ('SUC009', 'Sucursal Zaragoza', 'Salamanca', 'Teruel', 'Cuesta Estela Torres 7 Puerta 2 Madrid, 01605', 'activo', '+34 731 37 98 74'),
-('SUC010', 'Sucursal Las Palmas', 'Melilla', 'Málaga', 'Pasadizo Carmelita Clemente 50 Apt. 68 Vizcaya, 51575', 'activo', '+34 700 224 154'),
-('SUC011', 'Sucursal Córdoba', 'Guipúzcoa', 'Ourense', 'C. de Ovidio Quintero 25 Apt. 34 Melilla, 70515', 'activo', '+34 623 44 71 30'),
-('SUC012', 'Sucursal Ciudad', 'Albacete', 'Murcia', 'Plaza Piedad Riera 438 Piso 3 Ávila, 66573', 'activo', '+34703 77 01 64'),
+('SUC010', 'Sucursal Las Palmas', 'Melilla', 'MÃ¡laga', 'Pasadizo Carmelita Clemente 50 Apt. 68 Vizcaya, 51575', 'activo', '+34 700 224 154'),
+('SUC011', 'Sucursal CÃ³rdoba', 'GuipÃºzcoa', 'Ourense', 'C. de Ovidio Quintero 25 Apt. 34 Melilla, 70515', 'activo', '+34 623 44 71 30'),
+('SUC012', 'Sucursal Ciudad', 'Albacete', 'Murcia', 'Plaza Piedad Riera 438 Piso 3 Ãvila, 66573', 'activo', '+34703 77 01 64'),
 ('SUC013', 'Sucursal Lugo', 'Burgos', 'Zamora', 'Plaza Alba Murillo 51 Apt. 89 Valencia, 03466', 'activo', '+34 659 866 520'),
-('SUC014', 'Sucursal Salamanca', 'Melilla', 'Toledo', 'Acceso de Marcela Galán 71 Apt. 28 Zaragoza, 21345', 'activo', '+34714190539'),
-('SUC015', 'Sucursal Santa Cruz de Tenerife', 'Huesca', 'La Rioja', 'Plaza Lupe Luján 9 Piso 8 Barcelona, 68842', 'activo', '+34 818 51 40 44');
+('SUC014', 'Sucursal Salamanca', 'Melilla', 'Toledo', 'Acceso de Marcela GalÃ¡n 71 Apt. 28 Zaragoza, 21345', 'activo', '+34714190539'),
+('SUC015', 'Sucursal Santa Cruz de Tenerife', 'Huesca', 'La Rioja', 'Plaza Lupe LujÃ¡n 9 Piso 8 Barcelona, 68842', 'activo', '+34 818 51 40 44');
 GO
 
 SELECT*FROM responsables;
@@ -129,41 +129,41 @@ SELECT*FROM responsables;
 INSERT INTO responsables (nombre, cod_empleado, cargo, correo) 
 VALUES 
 ('Abilio Anglada Exposito', 'EMP0001', 'Asesor', 'canetenilda@gmail.com'),
-('Adela Cadenas Vélez', 'EMP0002', 'Gerente', 'aledonoso@yahoo.com'),
-('Jose Luis Lucena Cózar', 'EMP0003', 'Gerente', 'calvetester@gmail.com'),
-('Carmelo Omar Antón Calatayud', 'EMP0004', 'Analista', 'kpou@hotmail.com'),
-('María Jesús Rico Blanca', 'EMP0005', 'Analista', 'severino13@yahoo.com'),
+('Adela Cadenas VÃ©lez', 'EMP0002', 'Gerente', 'aledonoso@yahoo.com'),
+('Jose Luis Lucena CÃ³zar', 'EMP0003', 'Gerente', 'calvetester@gmail.com'),
+('Carmelo Omar AntÃ³n Calatayud', 'EMP0004', 'Analista', 'kpou@hotmail.com'),
+('MarÃ­a JesÃºs Rico Blanca', 'EMP0005', 'Analista', 'severino13@yahoo.com'),
 ('Adelina Delgado Molina', 'EMP0006', 'Asesor', 'isaiassolsona@jara.org'),
-('Evangelina de Acuña', 'EMP0007', 'Asesor', 'sfuertes@talavera-marco.es'),
+('Evangelina de AcuÃ±a', 'EMP0007', 'Asesor', 'sfuertes@talavera-marco.es'),
 ('Gema Vall Sastre', 'EMP0008', 'Gerente', 'enriquezencarnacion@hotmail.com'),
 ('Apolonia del Montserrat', 'EMP0009', 'Gerente', 'juanito63@hotmail.com'),
-('Rita Español Alemán', 'EMP0010', 'Analista', 'manola66@villegas.net'),
+('Rita EspaÃ±ol AlemÃ¡n', 'EMP0010', 'Analista', 'manola66@villegas.net'),
 ('Jafet Barrena Castilla', 'EMP0011', 'Asesor', 'guzmanaitor@hotmail.com'),
-('Emigdio Velasco Martí', 'EMP0012', 'Asesor', 'bchamorro@gmail.com'),
-('Obdulia Nieto Marqués', 'EMP0013', 'Analista', 'ingrid53@pelayo-quintanilla.com'),
+('Emigdio Velasco MartÃ­', 'EMP0012', 'Asesor', 'bchamorro@gmail.com'),
+('Obdulia Nieto MarquÃ©s', 'EMP0013', 'Analista', 'ingrid53@pelayo-quintanilla.com'),
 ('Ariel Marquez Acedo', 'EMP0014', 'Gerente', 'yparejo@pedrero.es'),
-('Maite Domingo Marqués', 'EMP0015', 'Analista', 'carinacatala@hotmail.com');
+('Maite Domingo MarquÃ©s', 'EMP0015', 'Analista', 'carinacatala@hotmail.com');
 GO
 
 SELECT*FROM clientes;
 
 INSERT INTO clientes (nombre, numero_idc, tipo_de_idc, tipo_de_cliente, direccion, email, telefono) 
 VALUES 
-('Damián Páez Salas', 'DNI63030431', 'DNI', 'NAT', 'Rambla de Blas Miguel 92 Baleares, 96223', 'pascual06@gmail.com', '+34729 425 659'),
-('Nicolás Blazquez Pelayo', 'DNI11920138', 'DNI', 'NAT', 'Pasaje Bernardo Figueras 7 Ávila, 50373', 'salomepalau@yahoo.com', '+34601209201'),
-('Teodosio de Sebastián', 'DNI19796204', 'DNI', 'NAT', 'Ronda de Alejandro Riba 93 Granada, 02219', 'alberto36@jerez.es', '+34 724 608 057'),
+('DamiÃ¡n PÃ¡ez Salas', 'DNI63030431', 'DNI', 'NAT', 'Rambla de Blas Miguel 92 Baleares, 96223', 'pascual06@gmail.com', '+34729 425 659'),
+('NicolÃ¡s Blazquez Pelayo', 'DNI11920138', 'DNI', 'NAT', 'Pasaje Bernardo Figueras 7 Ãvila, 50373', 'salomepalau@yahoo.com', '+34601209201'),
+('Teodosio de SebastiÃ¡n', 'DNI19796204', 'DNI', 'NAT', 'Ronda de Alejandro Riba 93 Granada, 02219', 'alberto36@jerez.es', '+34 724 608 057'),
 ('Lucho Corbacho Bayona', 'DNI57359138', 'DNI', 'NAT', 'Cuesta Apolinar Tur 89 Toledo, 22227', 'martin05@lobato-soler.org', '+34 899 489 601'),
-('Eusebia Fabregat Lago', 'DNI95335451', 'DNI', 'JUR', 'Rambla de Joaquín Arce 31 Apt. 72 Ourense, 44509', 'nazaret14@hotmail.com', '+34701 82 33 25'),
-('Fulgencio Soria', 'DNI72938098', 'DNI', 'JUR', 'Cañada de Natalia Cañizares 2 Puerta 2 Las Palmas, 65706', 'verduvinicio@yahoo.com', '+34 728627557'),
-('Asdrubal Enríquez Berenguer', 'DNI12827833', 'DNI', 'NAT', 'Plaza Javi Solsona 32 León, 47627', 'aroa16@yahoo.com', '+34700527081'),
-('Otilia Solís Real', 'DNI32426306', 'DNI', 'JUR', 'Callejón de Teodoro Elorza 86 Puerta 9 Valencia, 19936', 'higuerasjosep@criado-sureda.com', '+34 735 98 18 15'),
+('Eusebia Fabregat Lago', 'DNI95335451', 'DNI', 'JUR', 'Rambla de JoaquÃ­n Arce 31 Apt. 72 Ourense, 44509', 'nazaret14@hotmail.com', '+34701 82 33 25'),
+('Fulgencio Soria', 'DNI72938098', 'DNI', 'JUR', 'CaÃ±ada de Natalia CaÃ±izares 2 Puerta 2 Las Palmas, 65706', 'verduvinicio@yahoo.com', '+34 728627557'),
+('Asdrubal EnrÃ­quez Berenguer', 'DNI12827833', 'DNI', 'NAT', 'Plaza Javi Solsona 32 LeÃ³n, 47627', 'aroa16@yahoo.com', '+34700527081'),
+('Otilia SolÃ­s Real', 'DNI32426306', 'DNI', 'JUR', 'CallejÃ³n de Teodoro Elorza 86 Puerta 9 Valencia, 19936', 'higuerasjosep@criado-sureda.com', '+34 735 98 18 15'),
 ('Emiliana Rosell Caro', 'DNI10314702', 'DNI', 'JUR', 'Cuesta Lorenzo Ferrando 87 Apt. 43  Valencia, 01420', 'arocamerche@velazquez.es', '+34641772828'),
-('Elvira Luisina Barberá Gascón', 'DNI68782677', 'DNI', 'NAT', 'Urbanización de Albano Huerta 81 Piso 7 Castellón, 69371', 'patriciaconesa@yahoo.com', '+34732 952 336'),
-('Eloy Bustos Verdú', 'DNI91819862', 'DNI', 'JUR', 'Ronda de Néstor Revilla 484 Pontevedra, 60593', 'renato59@yahoo.com', '+34990 336 651'),
-('Sarita Sacristán Verdú', 'DNI60268947', 'DNI', 'JUR', 'Acceso Agapito Bejarano 22 Apt. 71 Toledo, 05489', 'dimasrubio@corral.org', '+34710290941'),
-('Lilia Pedraza Pizarro', 'DNI52700218', 'DNI', 'NAT', 'Acceso Rosario Osuna 42 Puerta 2 Almería, 87352', 'cvilaplana@hotmail.com', '+34961 89 25 54'),
-('Carlota de Torrens', 'DNI70685418', 'DNI', 'JUR', 'C. Georgina Cámara 10 Puerta 9  Valencia, 83881', 'zduarte@hotmail.com', '+34741 56 36 34'),
-('Ramón Nogués Carrera', 'DNI40898530', 'DNI', 'JUR', 'Rambla Ruben Cerdán 42 Ávila, 38970', 'erasmoluna@pelayo-martorell.net', '+34 884414590');
+('Elvira Luisina BarberÃ¡ GascÃ³n', 'DNI68782677', 'DNI', 'NAT', 'UrbanizaciÃ³n de Albano Huerta 81 Piso 7 CastellÃ³n, 69371', 'patriciaconesa@yahoo.com', '+34732 952 336'),
+('Eloy Bustos VerdÃº', 'DNI91819862', 'DNI', 'JUR', 'Ronda de NÃ©stor Revilla 484 Pontevedra, 60593', 'renato59@yahoo.com', '+34990 336 651'),
+('Sarita SacristÃ¡n VerdÃº', 'DNI60268947', 'DNI', 'JUR', 'Acceso Agapito Bejarano 22 Apt. 71 Toledo, 05489', 'dimasrubio@corral.org', '+34710290941'),
+('Lilia Pedraza Pizarro', 'DNI52700218', 'DNI', 'NAT', 'Acceso Rosario Osuna 42 Puerta 2 AlmerÃ­a, 87352', 'cvilaplana@hotmail.com', '+34961 89 25 54'),
+('Carlota de Torrens', 'DNI70685418', 'DNI', 'JUR', 'C. Georgina CÃ¡mara 10 Puerta 9  Valencia, 83881', 'zduarte@hotmail.com', '+34741 56 36 34'),
+('RamÃ³n NoguÃ©s Carrera', 'DNI40898530', 'DNI', 'JUR', 'Rambla Ruben CerdÃ¡n 42 Ãvila, 38970', 'erasmoluna@pelayo-martorell.net', '+34 884414590');
 GO
 
 SELECT*FROM tipo_de_prestamos;
@@ -807,7 +807,7 @@ JOIN cuotas cu ON cu.prestamo_id = p.id
 WHERE cu.estado_pago = 'vencida'
 GROUP BY p.id, c.nombre, p.estado;
 
---- 2.- tipo de préstamos por tipo
+--- 2.- tipo de prÃ©stamos por tipo
 
 SELECT tp.nombre_tipo, COUNT(*) AS cantidad_prestamos, SUM(p.monto_prestamo) AS monto_total
 FROM prestamos p
@@ -815,7 +815,7 @@ JOIN tipo_de_prestamos tp ON p.tipo_de_prestamo_id = tp.id
 GROUP BY tp.nombre_tipo;
 
 
----3.- cuales son las próximas cuotas a vencer en los últimos 30 días--
+---3.- cuales son las prÃ³ximas cuotas a vencer en los Ãºltimos 30 dÃ­as--
 
 SELECT c.nombre AS cliente, p.id AS prestamo_id, cu.numero_cuota, cu.fecha_vencimiento
 FROM cuotas cu
@@ -825,7 +825,7 @@ WHERE cu.estado_pago = 'pendiente'
   AND cu.fecha_vencimiento BETWEEN CAST(GETDATE() AS DATE) AND DATEADD(DAY, 30, GETDATE());
 
 
---- 4.- Consultar el historial de pagos de un cliente: por ejemplo Ramón Nogués Carrera---
+--- 4.- Consultar el historial de pagos de un cliente: por ejemplo RamÃ³n NoguÃ©s Carrera---
 
 SELECT c.nombre AS cliente, cu.numero_cuota, cu.fecha_vencimiento,
        pa.fecha_pago, pa.monto_pagado, pa.metodo_pago
@@ -833,24 +833,10 @@ FROM pagos pa
 JOIN cuotas cu ON pa.cuota_id = cu.id
 JOIN prestamos p ON cu.prestamo_id = p.id
 JOIN clientes c ON p.cliente_id = c.id
-WHERE c.nombre = 'Ramón Nogués Carrera'
+WHERE c.nombre = 'RamÃ³n NoguÃ©s Carrera'
 ORDER BY pa.fecha_pago;
 
----3.-  
-
-CREATE VIEW vista_detalle_prestamos AS
-SELECT p.id AS prestamo_id, c.nombre AS cliente, tp.nombre_tipo AS tipo_prestamo,
-       p.monto_prestamo, p.tasa_interes, p.plazo, p.fecha_inicio, p.estado
-FROM prestamos p
-JOIN clientes c ON p.cliente_id = c.id
-JOIN tipo_de_prestamos tp ON p.tipo_de_prestamo_id = tp.id;
-
-DROP VIEW vista_detalle_prestamos;
-GO
-
-SELECT * FROM vista_saldos_pendientes;
-
---5.- préstamos activos con saldo pendiente mayor a 2000---
+--4.- prÃ©stamos activos con saldo pendiente mayor a 2000---
 
 CREATE FUNCTION dbo.saldo_pendiente(@prestamo_id INT)
 RETURNS DECIMAL(10,2)
@@ -878,11 +864,11 @@ FROM prestamos p
 JOIN clientes c ON p.cliente_id = c.id
 WHERE p.estado = 'activo' AND dbo.saldo_pendiente(p.id) > 2000;
 
---- 6.- Visualiar el saldo pendiente de un solo préstamo por ID
+--- 5.- Visualiar el saldo pendiente de un solo prÃ©stamo por ID
 
 SELECT dbo.saldo_pendiente(5) AS saldo_del_prestamo;
 
---- 7.- Top 5 clientes con mayor deuda pendiente---
+--- 6.- Top 5 clientes con mayor deuda pendiente---
 
 SELECT TOP 5 c.nombre, dbo.saldo_pendiente(p.id) AS deuda_total
 FROM prestamos p
@@ -890,7 +876,7 @@ JOIN clientes c ON p.cliente_id = c.id
 WHERE p.estado = 'activo'
 ORDER BY dbo.saldo_pendiente(p.id) DESC;
 
---- 8.- Total de pagos recibidos por sucursal---
+--- 7.- Total de pagos recibidos por sucursal---
 
 SELECT s.nombre AS sucursal, SUM(pg.monto_pagado) AS total_pagado
 FROM pagos pg
@@ -899,7 +885,7 @@ JOIN prestamos pr ON cu.prestamo_id = pr.id
 JOIN sucursales s ON pr.sucursal_id = s.id
 GROUP BY s.nombre;
 
---- 9.- Obten el pago total realizado por un cliente
+--- 8.- Obten el pago total realizado por un cliente
 
 CREATE FUNCTION dbo.total_pagado_por_cliente(@cliente_id INT)
 RETURNS DECIMAL(10,2)
