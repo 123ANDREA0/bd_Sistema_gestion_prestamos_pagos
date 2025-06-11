@@ -1,25 +1,27 @@
-Caso Propuesto: Sistema de Gestión de Préstamos y Pagos para Banco
-1. Contexto
+CASO PROPUESTO:Sistema de Gestión de Préstamos y Pagos para Banco
+
+1.- Descripción del problema:
 Un banco desea automatizar la gestión de los préstamos que otorga a sus clientes, incluyendo el seguimiento detallado de los pagos realizados y el control del estado de cada préstamo.
 
-2. Objetivos
-Registrar y administrar préstamos otorgados a clientes.
+2.- Objetivo del proyecto:
+•	Registrar y administrar préstamos otorgados a clientes.
+•	Controlar el calendario de pagos de cada préstamo.
+•	Registrar los pagos realizados y actualizar los saldos pendientes.
+•	Gestionar diferentes tipos de préstamos con distintas condiciones (tasas de interés, plazos).
+•	Generar reportes sobre estado de préstamos, morosidad y movimientos de pagos.
 
-Controlar el calendario de pagos de cada préstamo.
+3.- Entidades Principales:
+Entidad	Atributos principales
+Clientes	ID, Nombre, numero_idc, tipo_de_idc, tipo_de_cliente, dirección, Teléfono, Email.
+Préstamos	ID, cliente_id, responsable_id, sucursal_id, tipo_de_prestamo_id, tasa_interes, monto_prestamo,plazo, fecha_inicio, estado.
+Cuotas	ID, prestamo_id, numero_cuota, fecha_vencimiento, monto_cuota, estado_pago.
+Pagos	ID, cuota_id, fecha_pago, monto_pagado, método_pago 
+responsables	ID, nombre, código_empleado, cargo, correo.
+Detalle de pagos	ID, cuota_id, pago_id, monto_afectado
+Tipo de prestamos	ID, nombre_tipo
+Sucursal	ID, código, nombre, ciudad, región, dirección, estado, teléfono.
 
-Registrar los pagos realizados y actualizar los saldos pendientes.
 
-Gestionar diferentes tipos de préstamos con distintas condiciones (tasas de interés, plazos).
-
-Generar reportes sobre estado de préstamos, morosidad y movimientos de pagos.
-
-3. Entidades Principales
-Entidad	Atributos Clave
-Cliente	ID_cliente, Nombre, Documento_identidad, Dirección, Teléfono, Email
-Préstamo	ID_préstamo, ID_cliente, Tipo_préstamo, Monto_préstamo, Tasa_interés, Plazo, Fecha_inicio, Estado (activo, pagado, moroso)
-Cuota	ID_cuota, ID_préstamo, Número_cuota, Fecha_vencimiento, Monto_cuota, Estado_pago (pendiente, pagada, vencida)
-Pago	ID_pago, ID_cuota, Fecha_pago, Monto_pagado, Método_pago (efectivo, transferencia, tarjeta)
-TipoPréstamo	ID_tipo, Nombre_tipo (personal, hipotecario, vehicular), Tasa_interés_base
 
 4. Relaciones
 Un Cliente puede tener varios Préstamos.
